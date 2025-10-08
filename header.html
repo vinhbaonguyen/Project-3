@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .header-top-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-method {
+            display: block;
+            /* Không dùng grid ở đây nữa */
+            width: fit-content;
+            margin: 20px auto 0;
+            text-align: left;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item dt {
+            padding-right: 0.1rem;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .contact-item dd {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .contact-social {
+            display: flex;
+            list-style-type: none;
+        }
+    </style>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-12 header-top-wrapper">
+                <dl class="contact-item">
+                    <div class="email">
+                        <dt>
+                            <i class="fa-solid fa-envelope"></i>
+                        </dt>
+                        <dd>
+                            <a href="#">
+                                contact@example.com
+                            </a>
+                        </dd>
+
+                    </div>
+                    <div class="phone">
+                        <dt>
+                            <i class="fa-solid fa-mobile"></i>
+                        </dt>
+                        <dd>
+                            <span>+1 5589 55488 55</span>
+                        </dd>
+                    </div>
+                </dl>
+                <ul class="contact-social">
+                    <li class="list-item">
+                        <a href="#">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

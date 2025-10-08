@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Luxurious+Roman&family=Noto+Sans+JP:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-all: "Noto Sans JP", sans-serif;
+    --bg-color-1: #5CB874;
+    --bg-color-2: #FFFFFF;
+    --bg-color-3: #F9FCF9;   
+    --title-color:#000000;
+    --text-color: #555555;
+    --icon-color:#20C997;
+
+
+}
+
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+li {
+    min-width: 30px;
+    min-height: 30px;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--bg-color-2);
+
+}
+
+
+i {
+    display: inline-block;
+    text-align: center;
+    /* căn giữa icon bên trong */
+    line-height: 40px;
+    /* căn giữa theo chiều dọc */
+    font-size: 18px;
+
+}
+
+.button {
+    background-color: var(--bg-color-1);
+    color: var(--bg-color-2);
+    width: 160px;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    border-radius: 24px;
+    white-space: nowrap;
+}
+
+.button a {
+    font-size: 1.2rem;
+    color: var(--bg-color-2);
+}
+
+.btn-sevent {
+    /* font-family: arial; */
+    /* color: #14396A !important; */
+    color: var(--bg-color-2);
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    /* box-shadow: 1px 1px 1px #BEE2F9; */
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--bg-color-2);
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+    width: 220px;
+    font-size: 1.2rem;
+    transition: border-color 0.8s ease, border-width 0.8s ease;
+    margin-top: 80px;
+    margin-right: 10px;
+  
+}
+
+.btn-sevent:hover {
+    border-color: transparent;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.btn-sevent:hover a {
+    text-decoration: none;
+}
+
+
+/* Section tree and six  */
+
+.sec-three-title {
+    text-align: center;
+    padding: 30px;
+
+    /* margin: 30px 0; */
+}
+
+.sec-three-title h2 {
+    border-bottom: solid 1px var(--text-color);
+    padding: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.sec-three-title h2::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 4px;
+    background-color: var(--bg-color-1);
+}
+
+.sec-three-title p {
+    color: var(--text-color);
+}
+
+/* Áp dụng cho section nine giống với section eight */
+article {  
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    overflow: hidden;   
+}
+.img-container {
+    width: 100%;
+    height: 100%;            /* 👈 giới hạn chiều cao vùng ảnh */
+    overflow: hidden;         /* 👈 chặn ảnh phóng to vượt ra */
+    display: block;
+    position: relative;
+}
+
+ img {
+    width: 100%;
+    height: 100%;     
+    object-fit: cover;
+    transition: all 0.3s ease;
+    display: block;    
+}
+
+/* End Áp dụng cho section nine giống với section eight */
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.1rem 0.3rem;
+  color: white;
+  background-color: black;
+  padding: 0rem;
+  /* font-family: sans-serif; */
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+  width: auto;
+}
+
+.footer-address{
+    margin-bottom: 6px;
+}
