@@ -1,0 +1,104 @@
+/* Slick Carousel - Core Styles */
+/* Slick Theme - Custom Styles (chỉ phần tùy chỉnh của project) */
+
+/* ========== CUSTOM ARROWS cho Section One ========== */
+.custom-prev,
+.custom-next {
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+/* Customized cho các button của Slick */
+/* Ẩn ký tự mặc định của Slick */
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+/* ========== DOTS cho Section One (gạch ngang) ========== */
+
+.slick-dots {
+    bottom: 0;
+}
+
+/* Ẩn chấm tròn mặc định */
+.slick-dots li button:before {
+    content: '';
+    width: 30px;
+    /* độ dài gạch ngang */
+    height: 3px;
+    /* độ dày */
+    background-color: #ccc;
+    /* màu gạch */
+    display: inline-block;
+    opacity: 1;
+    border-radius: 0;
+    /* không bo tròn */
+}
+
+/* Gạch active (đang chọn) */
+.slick-dots li.slick-active button:before {
+    background-color: yellow;
+    /* đổi màu khi active */
+}
+
+/* Tùy chỉnh khoảng cách giữa các gạch */
+.slick-dots li {
+    margin: 0 6px;
+}
+
+/* ========== DOTS cho Section Five (chấm tròn) ========== */
+/* Dịch dot xuống dưới 20px */
+.sec-five-container .slick-dots {
+    position: relative;
+    bottom: -20px;
+    /* đây chính là khoảng cách bạn muốn */
+}
+/* Ẩn ký tự mặc định */
+.sec-five-container .slick-dots li button:before {
+    content: "";
+    width: 10px;
+    /* kích thước dot */
+    height: 10px;
+    background-color: #ccc;
+    /* màu dot mặc định */
+    border-radius: 50%;
+    /* bo tròn */
+    display: block;
+    /* cần để kích thước có hiệu lực */
+    opacity: 1;
+    /* để dot hiện rõ */
+}
+/* Dot(chấm) đang active */
+.slick-dots li.slick-active button:before {
+    background-color: var(--bg-color-1);
+    /* màu khi active */
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .custom-prev,
+    .custom-next {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+

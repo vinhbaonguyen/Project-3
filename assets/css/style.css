@@ -1,5 +1,4 @@
 /* Header One */
-
 body {
     position: relative;
 }
@@ -16,42 +15,101 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
 
 .header-top-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 0;
-    background-color: var(--bg-color-1);
-}
-
-.contact-item dt {
-    padding-right: 0.1rem;
-    margin: 0;
-}
-
-.contact-item dd {
-    margin: 0;
+    width: 100%;
+    gap: 16px;
 }
 
 .contact-social {
     display: flex;
     list-style-type: none;
+    margin-left: auto;
 }
 
 @media (max-width:768px) {
-    ul.contact-social {
-        display: none;
+    .header-one {
+        min-height: auto;
+        padding: 10px 0;
+        text-align: center;
     }
+
+    .header-top-wrapper {      
+        width: 100%;
+        display: grid;
+        grid:
+            "contact-item-email contact-social" 1fr
+            "contact-item-telephone contact-social" 1fr 
+            / 1fr 1fr;
+        justify-items: start;
+        gap: 8px;        
+    }
+
+    .contact-item-email {
+        grid-area: contact-item-email;
+    }
+    .contact-item-telephone{
+        grid-area: contact-item-telephone;
+    }
+    .contact-social{
+        grid-area: contact-social;
+    }    
+
+    .header-two {
+        position: relative;
+        top: auto;
+        margin-top: 36px;
+    }   
 }
+
+@media (max-width:576px) {
+    
+    .header-top-wrapper {
+        height: auto;    
+        width: 100%;
+        display: grid;
+        grid:
+            "contact-item-email" 1fr           
+            "contact-item-telephone" 1fr
+            "contact-social" 1fr
+            / 1fr;
+        align-content: start;
+        justify-items: start;
+        gap: 8px;
+       
+    }
+    
+    .contact-item-email {
+        grid-area: contact-item-email;
+        /* margin: 0 auto; */
+    }
+    .contact-item-telephone{
+        grid-area: contact-item-telephone;
+        /* margin: 0 auto; */
+    }
+    .contact-social{
+        grid-area: contact-social;
+        margin-left:0px;
+       
+       
+    }
+    .contact-social li{
+        margin-left: 0;
+        margin-right: 6px;
+
+    }
+     .header-two {
+        position: relative;
+        top: auto;
+        margin-top: 76px;
+    }   
+    
+}
+
+
 
 /* End Header One */
 .header-two {
@@ -62,6 +120,7 @@ body {
     z-index: 10001;
     width: 100%;
 }
+
 
 .header-title a {
     color: var(--bg-color-1);
@@ -243,6 +302,8 @@ body {
     }
 }
 
+
+
 /* Section-one */
 .section-one {
     /* background: var(--bg-color-1); */
@@ -301,64 +362,16 @@ body {
     color: var(--bg-color-2);
 }
 
-.custom-prev,
-.custom-next {
-    width: 45px;
-    height: 45px;
-    background: rgba(0, 0, 0, 0.4);
-    border: none;
-    border-radius: 50%;
-    color: white;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    cursor: pointer;
-}
+@media (max-width:768px) {
 
-.custom-prev {
-    left: 10px;
-}
+    /* Điều chỉnh margin-top của section-one vi*/
+    .section-one {
+        margin-top: 140px;
+        /* Reset về 0 vì header không fixed nữa */
+        padding-top: 20px;
+        /* Thêm padding thay vì margin */
+    }
 
-.custom-next {
-    right: 10px;
-}
-
-/* Customized cho các button của Slick */
-.slick-prev:before,
-.slick-next:before {
-    display: none;
-}
-
-.slick-dots {
-    bottom: 0;
-}
-
-/* Ẩn chấm tròn mặc định */
-.slick-dots li button:before {
-    content: '';
-    width: 30px;
-    /* độ dài gạch ngang */
-    height: 3px;
-    /* độ dày */
-    background-color: #ccc;
-    /* màu gạch */
-    display: inline-block;
-    opacity: 1;
-    border-radius: 0;
-    /* không bo tròn */
-}
-
-/* Gạch active (đang chọn) */
-.slick-dots li.slick-active button:before {
-    background-color: yellow;
-    /* đổi màu khi active */
-}
-
-/* Tùy chỉnh khoảng cách giữa các gạch */
-.slick-dots li {
-    margin: 0 6px;
 }
 
 /* End Section One */
@@ -604,7 +617,6 @@ body {
 /* End Section Four */
 
 /* Section-five */
-
 .section-five {
     display: flex;
     align-items: center;
@@ -631,35 +643,6 @@ body {
 .client img:hover {
     filter: grayscale(0%);
     opacity: 1;
-}
-
-/* Dịch dot xuống dưới 20px */
-.sec-five-container .slick-dots {
-    position: relative;
-    bottom: -20px;
-    /* đây chính là khoảng cách bạn muốn */
-}
-
-/* Ẩn ký tự mặc định */
-.sec-five-container .slick-dots li button:before {
-    content: "";
-    width: 10px;
-    /* kích thước dot */
-    height: 10px;
-    background-color: #ccc;
-    /* màu dot mặc định */
-    border-radius: 50%;
-    /* bo tròn */
-    display: block;
-    /* cần để kích thước có hiệu lực */
-    opacity: 1;
-    /* để dot hiện rõ */
-}
-
-/* Dot đang active */
-.slick-dots li.slick-active button:before {
-    background-color: var(--bg-color-1);
-    /* màu khi active */
 }
 
 /* End Section five */
@@ -1212,3 +1195,47 @@ body {
 
 
 /* End section-eleven */
+
+/* BackToTop Button ,Button này tạo ra bằng JS viết trong main.js */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-color-1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.back-to-top:hover {
+    background-color: var(--bg-color-2);
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.back-to-top i {
+    color: white;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+}

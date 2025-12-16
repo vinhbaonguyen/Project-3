@@ -36,6 +36,7 @@ li {
     min-width: 30px;
     min-height: 30px;
     align-content: center;
+    margin-left: 10px;
 }
 
 a {
@@ -51,7 +52,7 @@ i {
     /* căn giữa icon bên trong */
     line-height: 40px;
     /* căn giữa theo chiều dọc */
-    font-size: 18px;
+    font-size: 22px;
 
 }
 
@@ -120,8 +121,6 @@ i {
     margin-bottom: 30px;
     display: inline-block;
     position: relative;
-
-
 }
 
 .sec-three-title h2::before {
@@ -171,7 +170,6 @@ dl {
   color: white;
   background-color: black;
   padding: 0rem;
-  /* font-family: sans-serif; */
 }
 
 dt {
