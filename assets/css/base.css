@@ -9,8 +9,6 @@
     --title-color:#000000;
     --text-color: #555555;
     --icon-color:#20C997;
-
-
 }
 
 html {
@@ -111,8 +109,9 @@ i {
 .sec-three-title {
     text-align: center;
     padding: 30px;
+    border: none;
 
-    /* margin: 30px 0; */
+  
 }
 
 .sec-three-title h2 {

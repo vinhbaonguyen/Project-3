@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- reset file CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- CDN của Font Awesome – một thư viện icon  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,6 +27,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CSS của Animate -->
     <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 
@@ -81,17 +84,17 @@
                     <input type='checkbox' id='responsive-menu'>
                     <label for="responsive-menu"></label>
                     <ul>
-                        <li><a href='http://'>Home</a></li>
-                        <li><a href='http://'>About</a></li>
-                        <li><a class='dropdown-arrow' href='http://'>Services</a>
+                        <li><a href='#home'>Home</a></li>
+                        <li><a href='#about'>About</a></li>
+                        <li><a class='dropdown-arrow' href='#service'>Services</a>
                             <ul class='sub-menus'>
                                 <li><a href='http://'>Services 1</a></li>
                                 <li><a href='http://'>Services 2</a></li>
                                 <li><a href='http://'>Services 3</a></li>
                             </ul>
                         </li>
-                        <li><a href='http://'>Portfolio</a></li>
-                        <li><a href='http://'>Team</a></li>
+                        <li><a href='#portfolio'>Portfolio</a></li>
+                        <li><a href='#team'>Team</a></li>
 
                         <li><a class='dropdown-arrow' href='http://'>Products</a>
                             <ul class='sub-menus'>
@@ -101,13 +104,13 @@
                                 <li><a href='http://'>Products 4</a></li>
                             </ul>
                         </li>
-                        <li><a href='http://'>Contact Us</a></li>
+                        <li><a href='#contact'>Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section class="section-one">
+    <section class="section-one" id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 container-wrapper">
@@ -162,12 +165,12 @@
             </div>
         </div>
     </section>
-    <section class="section-two">
+    <section class="section-two" >
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__bounceInUp"
                     data-wow-duration="1.5s" data-wow-delay="0.3s">
-                    <div class="sec-two-content">
+                    <article class="sec-two-content">
                         <div class="sec-two-icon">
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
@@ -177,11 +180,11 @@
                         <p class="sec-two-desc">
                             Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
                         </p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__bounceInUp"
                     data-wow-duration="1.5s" data-wow-delay="0.6s">
-                    <div class="sec-two-content">
+                    <article class="sec-two-content">
                         <div class="sec-two-icon">
                             <i class="fa-regular fa-square"></i>
                         </div>
@@ -191,11 +194,11 @@
                         <p class="sec-two-desc">
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                         </p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__bounceInUp"
                     data-wow-duration="1.5s" data-wow-delay="0.9s">
-                    <div class="sec-two-content">
+                    <article class="sec-two-content">
                         <div class="sec-two-icon">
                             <i class="fa-regular fa-calendar"></i>
                         </div>
@@ -205,11 +208,11 @@
                         <p class="sec-two-desc">
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                         </p>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__bounceInUp"
                     data-wow-duration="1.5s" data-wow-delay="1.2s">
-                    <div class="sec-two-content">
+                    <article class="sec-two-content">
                         <div class="sec-two-icon">
                             <i class="fa-regular fa-handshake"></i>
                         </div>
@@ -219,37 +222,37 @@
                         <p class="sec-two-desc">
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-three">
+    <section class="section-three" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="sec-three-title wow animate__animated animate__slideInUp">
+                <div class="col-12 wow animate__animated animate__slideInUp">
+                    <header class="sec-three-title ">
                         <h2>
                             About Us
                         </h2>
                         <p>
                             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                         </p>
-                    </div>
+                    </header>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 sol-sm-12">
-                    <div class="sec-three-intro-video wow animate__animated animate__slideInUp">
+                <div class="col-xl-6 col-lg-6 col-md-12 sol-sm-12 wow animate__animated animate__slideInUp">
+                    <article class="sec-three-intro-video">
                         <a href="https://www.youtube.com/watch?v=Bt-3cF4wGcg" target="_blank" class="youtube-thumbnail">
                             <!-- <img src="https://img.youtube.com/vi/Bt-3cF4wGcg/maxresdefault.jpg" alt="Video thumbnail"> -->
                             <img src="assets/images/about.jpg" alt="Video thumbnail">
                             <div class="play-button"></div>
                         </a>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 sol-sm-12">
-                    <div class="sec-three-intro-desc wow animate__animated animate__slideInUp">
+                <div class="col-xl-6 col-lg-6 col-md-12 sol-sm-12 wow animate__animated animate__slideInUp">
+                    <article class="sec-three-intro-desc">
                         <h3>
                             Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
                         </h3>
@@ -269,7 +272,7 @@
                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                             occaecat cupidatat non proident
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -277,8 +280,9 @@
     <section class="section-four">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-four-wrap">
-                    <div class="sec-four-content wow animate__animated animate__slideInUp">
+                <div
+                    class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-four-wrap">
+                    <article class="sec-four-content">
                         <h4>
                             <span>
                                 01
@@ -289,10 +293,11 @@
                             Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
 
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-four-wrap">
-                    <div class="sec-four-content wow animate__animated animate__slideInUp">
+                <div
+                    class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-four-wrap">
+                    <article class="sec-four-content">
                         <h4>
                             <span>
                                 02
@@ -304,10 +309,11 @@
                             leno para dest
 
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-four-wrap">
-                    <div class="sec-four-content wow animate__animated animate__slideInUp">
+                <div
+                    class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-four-wrap">
+                    <article class="sec-four-content ">
                         <h4>
                             <span>
                                 03
@@ -318,10 +324,11 @@
                             Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis
 
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-four-wrap">
-                    <div class="sec-four-content">
+                <div
+                    class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-four-wrap">
+                    <article class="sec-four-content">
                         <h4>
                             <span>
                                 04
@@ -333,10 +340,11 @@
                             lando casa
 
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-four-wrap">
-                    <div class="sec-four-content wow animate__animated animate__slideInUp">
+                <div
+                    class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-four-wrap">
+                    <article class="sec-four-content">
                         <h4>
                             <span>
                                 05
@@ -348,10 +356,11 @@
                             quibusdam
 
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-four-wrap">
-                    <div class="sec-four-content wow animate__animated animate__slideInUp">
+                <div
+                    class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-four-wrap">
+                    <article class="sec-four-content ">
                         <h4>
                             <span>
                                 06
@@ -363,7 +372,7 @@
                             voluptatibus corporis sequi
 
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -373,60 +382,60 @@
             <div class="row">
                 <div class="col-12 sec-five-main">
                     <div class="sec-five-container"> <!-- ĐÂY là slider container -->
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="0.3s">
                             <img src="assets/images/client-1.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="0.6s">
                             <img src="assets/images/client-2.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="0.9s">
                             <img src="assets/images/client-3.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="1.2s">
                             <img src="assets/images/client-4.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="1.5s">
                             <img src="assets/images/client-5.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="1.8s">
                             <img src="assets/images/client-6.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="2.1s">
                             <img src="assets/images/client-7.png" alt="">
-                        </div>
-                        <div class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
+                        </figure>
+                        <figure class="client wow animate__animated animate__slideInUp" data-wow-duration="1.0s"
                             data-wow-delay="2.4s">
                             <img src="assets/images/client-8.png" alt="">
-                        </div>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-six">
+    <section class="section-six" id="service">
         <div class="container">
-            <div class="row sec-six-wrapper">
-                <div class="col-12">
-                    <div class="sec-three-title wow animate__animated animate__slideInUp">
+            <div class="row">
+                <div class="col-12 wow animate__animated animate__slideInUp">
+                    <article class="sec-three-title ">
                         <h2>
                             Services
                         </h2>
                         <p>
                             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-six-card">
-                    <div class="service-content position-relative item-1 wow animate__animated animate__slideInUp ">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-six-card">
+                    <article class="service-content position-relative item-1">
                         <i class="fa-solid fa-chart-line"></i>
                         <h4>
                             <a href="#" class="stretched-link"> Nesciunt Mete</a>
@@ -435,10 +444,10 @@
                             Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
                             perferendis tempore et consequatur.
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-six-card">
-                    <div class="service-content position-relative item-2 wow animate__animated animate__slideInUp">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-six-card">
+                    <article class="service-content position-relative item-2 ">
                         <i class="fa-regular fa-square"></i>
                         <h4>
                             <a href="#" class="stretched-link"> Eosle Commodi</a>
@@ -447,10 +456,10 @@
                             Ut autem aut autem non a. Sint sint sit facilis nam iusto sint.
                             Libero corrupti neque eum hic non ut nesciunt dolorem.
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-six-card">
-                    <div class="service-content position-relative item-3 wow animate__animated animate__slideInUp">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-six-card">
+                    <article class="service-content position-relative item-3 ">
                         <i class="fa-regular fa-calendar"></i>
                         <h4>
                             <a href="#" class="stretched-link">Ledo Markt</a>
@@ -459,10 +468,10 @@
                             Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
                             Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-six-card">
-                    <div class="service-content position-relative item-4 wow animate__animated animate__slideInUp">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-six-card">
+                    <article class="service-content position-relative item-4 ">
                         <i class="fa-regular fa-handshake"></i>
                         <h4>
                             <a href="#" class="stretched-link">Asperiores Commodi</a>
@@ -471,10 +480,10 @@
                             Non et temporibus minus omnis sed dolor esse consequatur.
                             Cupiditate sed error ea fuga sit provident adipisci neque.
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-six-card">
-                    <div class="service-content position-relative item-5 wow animate__animated animate__slideInUp">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-six-card">
+                    <article class="service-content position-relative item-5 ">
                         <i class="fa-regular fa-font-awesome"></i>
                         <h4>
                             <a href="#" class="stretched-link">Velit Doloremque.</a>
@@ -483,10 +492,10 @@
                             Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut.
                             Sed animi at autem alias eius labore
                         </p>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 sec-six-card">
-                    <div class="service-content position-relative item-6 wow animate__animated animate__slideInUp">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp sec-six-card">
+                    <article class="service-content position-relative item-6 ">
                         <i class="fa-regular fa-bookmark"></i>
                         <h4>
                             <a href="#" class="stretched-link">Dolori Architecto</a>
@@ -495,19 +504,18 @@
                             Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure.
                             Corrupti recusandae ducimus enim.
                         </p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-sevent">
+    <section class="section-sevent" id="portfolio">
         <div class="container">
-            <div class="row ">
-                <div class="col-xl-8 sec-sevent-main ">
-                    <div class="sec-sevent-container wow animate__animated animate__zoomIn">
+            <div class="row">
+                <div class="col-xl-8 wow animate__animated animate__zoomIn sec-sevent-main ">
+                    <div class="sec-sevent-container ">
                         <h3>
                             Call To Action
-
                         </h3>
                         <p>
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -527,25 +535,30 @@
     </section>
     <section class="section-eight">
         <div class="container">
-            <div class="row sec-six-wrapper">
-                <div class="col-12">
-                    <div class="sec-three-title wow animate__animated animate__slideInUp">
+            <div class="row ">
+                <div class="col-12 wow animate__animated animate__slideInUp sec-six-wrapper">
+                    <header class="sec-three-title">
                         <h2>
                             Portfolio
                         </h2>
                         <p>
                             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                         </p>
+                    </header>
+                </div>
+            </div>
+            <div class="row filter-button-row">
+                <div class="col-12">
+                    <div class="filter-button-group">
+                        <button class="btn btn-primary" data-filter="*">Tất cả</button>
+                        <button class="btn btn-outline-primary" data-filter=".books">Books</button>
+                        <button class="btn btn-outline-primary" data-filter=".apps">Apps</button>
+                        <button class="btn btn-outline-primary" data-filter=".products">Products</button>
+                        <button class="btn btn-outline-primary" data-filter=".brandings">Brandings</button>
                     </div>
                 </div>
             </div>
-            <div class="filter-button-group">
-                <button class="btn btn-primary" data-filter="*">Tất cả</button>
-                <button class="btn btn-outline-primary" data-filter=".books">Books</button>
-                <button class="btn btn-outline-primary" data-filter=".apps">Apps</button>
-                <button class="btn btn-outline-primary" data-filter=".products">Products</button>
-                <button class="btn btn-outline-primary" data-filter=".brandings">Brandings</button>
-            </div>
+            <!-- thuộc tính ⇓ grid ở đây mà không sẽ khg filter được -->
             <div class="row grid">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 grid-item books">
                     <article>
@@ -672,33 +685,29 @@
             </div>
         </div>
     </section>
-    <section class="section-nine">
+    <section class="section-nine" id="team">
         <div class="container">
-            <div class="row sec-six-wrapper">
+            <div class="row">
                 <div class="col-12">
-                    <div class="col-12">
-                        <div class="sec-three-title wow animate__animated animate__slideInUp">
-                            <h2>
-                                Team
-                            </h2>
-                            <p>
-                                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-                            </p>
-                        </div>
-                    </div>
-
+                    <header class="sec-three-title wow animate__animated animate__slideInUp">
+                        <h2>
+                            Team
+                        </h2>
+                        <p>
+                            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                        </p>
+                    </header>
                 </div>
             </div>
-            <div class="row sec-nine-wrapper">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <article class="sec-nine-container wow animate__animated animate__slideInUp"
-                        data-wow-duration="1.0s" data-wow-delay="0.3s">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 wow animate__animated animate__slideInUp"
+                    data-wow-duration="1.0s" data-wow-delay="0.3s">
+                    <article class="sec-nine-container">
                         <div class="img-container">
                             <img src="assets/images/team-1.jpg" alt="" class="img-fluid">
                         </div>
                         <h4 class="team-member">Walter White</h4>
                         <p class="team-member-pos">Web Development</p>
-
                         <p class="team-member-decs">Magni qui quod omnis unde et eos fuga et exercitationem. Odio
                             veritatis perspiciatis quaerat
                             qui aut aut aut</p>
@@ -763,9 +772,7 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </div>
-
                     </article>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
@@ -811,23 +818,23 @@
             </div>
         </div>
     </section>
-    <div class="section-ten">
+    <div class="section-ten" id="contact">
         <div class="container">
-            <div class="row sec-six-wrapper ">
+            <div class="row">
                 <div class="col-12">
-                    <div class="sec-three-title wow animate__animated animate__slideInUp">
+                    <header class="sec-three-title wow animate__animated animate__slideInUp">
                         <h2>
                             Contact
                         </h2>
                         <p>
                             Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                         </p>
-                    </div>
+                    </header>
                 </div>
             </div>
             <div class="row g-5 ">
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                    <div class="contact-main wow animate__animated animate__slideInUp">
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 wow animate__animated animate__slideInUp">
+                    <article class="contact-main">
                         <div class="contact">
                             <div class="icon-wrapper">
                                 <i class="fa-regular fa-address-book"></i>
@@ -860,32 +867,36 @@
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6539.488123754265!2d136.62704577560163!3d34.96302297282769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60038ee058e2f5c9%3A0x9399a9cd7d58b990!2z5Zub5pel5biC6aeF!5e0!3m2!1sja!2sjp!4v1759579179981!5m2!1sja!2sjp"
                                 style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <!-- width="340" height="280" -->
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                     <div class="contact-form wow animate__animated animate__slideInUp">
-                        <form class="row g-2">
-                            <div class="col-md-6 ">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" id="name" class="form-control">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Your Email</label>
-                                <input type="text" id="email" class="form-control">
-                            </div>
-                            <div class="col-12">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" id="subject" class="form-control">
-                            </div>
-                            <div class="col-12">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" rows="10" class="form-control"></textarea>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </div>
+                        <form>
+                            <fieldset class="row g-2">
+                                <legend >
+                                    Contact Information
+                                </legend>
+                                <div class="col-md-6 ">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" id="name" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="text" id="email" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" id="subject" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" rows="10" class="form-control"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
@@ -894,7 +905,7 @@
     </div>
     <footer class="section-eleven">
         <div class="container">
-            <div class="row sec-eleven-wrapper">
+            <div class="row">
                 <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 footer-container-main">
                     <div class="footer-container">
                         <h3 class="footer-container-title">Green</h3>
@@ -973,7 +984,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Bootstrap -->
     <!-- jQuery (chỉ cần 1 lần) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -37,81 +37,74 @@ body {
         text-align: center;
     }
 
-    .header-top-wrapper {      
+    .header-top-wrapper {
         width: 100%;
         display: grid;
         grid:
-            "contact-item-email contact-social" 1fr
-            "contact-item-telephone contact-social" 1fr 
-            / 1fr 1fr;
+            "contact-item-email contact-social" 1fr "contact-item-telephone contact-social" 1fr / 1fr 1fr;
         justify-items: start;
-        gap: 8px;        
+        gap: 8px;
     }
 
     .contact-item-email {
         grid-area: contact-item-email;
     }
-    .contact-item-telephone{
+
+    .contact-item-telephone {
         grid-area: contact-item-telephone;
     }
-    .contact-social{
+
+    .contact-social {
         grid-area: contact-social;
-    }    
+    }
 
     .header-two {
         position: relative;
         top: auto;
         margin-top: 36px;
-    }   
+    }
 }
 
 @media (max-width:576px) {
-    
     .header-top-wrapper {
-        height: auto;    
+        height: auto;
         width: 100%;
         display: grid;
         grid:
-            "contact-item-email" 1fr           
-            "contact-item-telephone" 1fr
-            "contact-social" 1fr
-            / 1fr;
+            "contact-item-email" 1fr "contact-item-telephone" 1fr "contact-social" 1fr / 1fr;
         align-content: start;
         justify-items: start;
         gap: 8px;
-       
     }
-    
+
     .contact-item-email {
-        grid-area: contact-item-email;
-        /* margin: 0 auto; */
+        grid-area: contact-item-email;        
     }
-    .contact-item-telephone{
-        grid-area: contact-item-telephone;
-        /* margin: 0 auto; */
+
+    .contact-item-telephone {
+        grid-area: contact-item-telephone;      
     }
-    .contact-social{
+
+    .contact-social {
         grid-area: contact-social;
-        margin-left:0px;
-       
-       
+        margin-left: 0px;
     }
-    .contact-social li{
+
+    .contact-social li {
         margin-left: 0;
         margin-right: 6px;
-
     }
-     .header-two {
+
+    .header-two {
         position: relative;
         top: auto;
         margin-top: 76px;
-    }   
-    
+    }
 }
 
-
-
 /* End Header One */
+
+/* Header Two */
 .header-two {
     background-color: var(--bg-color-2);
     position: fixed;
@@ -120,7 +113,6 @@ body {
     z-index: 10001;
     width: 100%;
 }
-
 
 .header-title a {
     color: var(--bg-color-1);
@@ -136,8 +128,7 @@ body {
 
 #menu {
     background: var(--bg-color-2);
-    height: 45px;
-    /* border-radius: 10px; */
+    height: 45px;  
 }
 
 #menu ul,
@@ -232,10 +223,6 @@ body {
 }
 
 @media screen and (max-width: 991.99px) {
-    .header-inner {
-        flex-wrap: nowrap;
-    }
-
     .header-title {
         flex-shrink: 0;
     }
@@ -277,8 +264,7 @@ body {
     #menu input,
     #menu label {
         position: absolute;
-        top: 0px;
-        /* right: calc(max-width); */
+        top: 0px;        
         display: block;
         font-size: 28px;
         width: 80%;
@@ -301,21 +287,15 @@ body {
         display: block
     }
 }
-
-
+/* Header-Two End */
 
 /* Section-one */
-.section-one {
-    /* background: var(--bg-color-1); */
-    /* padding: 0; */
+.section-one {   
     margin-top: 96px;
 }
 
 .container-wrapper {
-    padding: 0;
-    /* width: 100%; */
-    /* height: 80vh; */
-    /* overflow: hidden; */
+    padding: 0;    
 }
 
 .bg-img-item {
@@ -363,7 +343,6 @@ body {
 }
 
 @media (max-width:768px) {
-
     /* Điều chỉnh margin-top của section-one vi*/
     .section-one {
         margin-top: 140px;
@@ -371,13 +350,11 @@ body {
         padding-top: 20px;
         /* Thêm padding thay vì margin */
     }
-
 }
 
 /* End Section One */
 
 /* section-two */
-
 .section-two {
     background: var(--bg-color-3);
     padding: 60px 0;
@@ -410,15 +387,15 @@ body {
 
 /* Section Three */
 .section-three {
-    background: var(--bg-color-2);
-    /* padding: 40px 0; */
+    background: var(--bg-color-2);   
     margin-bottom: 40px;
 }
 
-
 .sec-three-intro-desc {
-    padding-left: 10px;
+    padding: 20px;
     margin-bottom: 30px;
+    min-height: 60vh;
+    height: 100%;
 }
 
 .sec-three-intro-desc ul {
@@ -447,8 +424,7 @@ body {
 .sec-three-intro-video {
     position: relative;
     width: 100%;
-    /* max-width: 560px; */
-    /* Tùy chỉnh chiều rộng */
+    height: 100%;    
     aspect-ratio: 16 / 9;
     /* Giữ đúng tỷ lệ video */
     overflow: hidden;
@@ -509,6 +485,7 @@ body {
 }
 
 /* End Section Three */
+
 /* Section four */
 
 .section-four {
@@ -552,7 +529,7 @@ body {
 
 /* ---------- BASE (desktop: 3 cột, ≥992px) ---------- */
 .sec-four-content {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-top: 1px solid var(--text-color);
     border-left: 1px solid var(--text-color);
     border-right: none;
@@ -648,10 +625,8 @@ body {
 /* End Section five */
 
 /* Section- six */
-
 .section-six {
-    background: var(--bg-color-3);
-    /* padding: 40px 0; */
+    background: var(--bg-color-3);    
     margin-bottom: 40px;
 }
 
@@ -742,11 +717,9 @@ body {
 
 .sec-sevent-container {
     margin: 80px auto;
-}
-
-.sec-sevent-container {
     color: var(--bg-color-2);
 }
+
 
 @media (max-width:1199.0px) {
     .sec-sevent-main {
@@ -772,7 +745,14 @@ body {
 .filter-button-group {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 60px;
+}
+
+.filter-button-row {
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -857,13 +837,18 @@ body {
     margin-bottom: 20px;
 }
 
+.sec-nine-container:hover img {
+    transform: scale(1.2);
+}
+
 .team-member {
+    font-size: 1.3rem;
     margin-top: 20px;
     margin-bottom: 0;
 }
 
 .team-member-pos {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 0;
 }
 
@@ -892,7 +877,7 @@ body {
 .nine a i {
     color: var(--text-color);
     opacity: 0.6;
-    font-size: 20px;
+    font-size: 1.8rem;
 }
 
 .nine li {
@@ -907,8 +892,6 @@ body {
     background-color: var(--bg-color-2);
 }
 
-
-
 .contact-main .map {
     width: 100%;
     height: 280px;
@@ -921,7 +904,6 @@ body {
 
 .contact {
     display: flex;
-    /* align-items: center; */
     align-items: flex-start;
     gap: 12px;
     margin-bottom: 20px;
@@ -962,20 +944,12 @@ body {
     color: var(--bg-color-2);
 }
 
-/* Đảm bảo box-sizing tính đúng kích thước */
-.contact-form,
-.contact-form * {
-    box-sizing: border-box;
-}
-
 .contact-main,
 .contact-form {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 100%;
-    max-width: none;
-    /* 🟡 quan trọng */
-    box-sizing: border-box;
+    max-width: none;   
 }
 
 /* Chỉ để kiểm tra trực quan */
@@ -987,28 +961,20 @@ body {
     outline: 2px dashed red;
 }
 
-/* Bỏ khoảng gutter mặc định của bootstrap trong form */
-/* .contact-form .row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-.contact-form .row > [class*="col-"] {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-} */
-
 .contact-form .btn {
     margin-top: 20px;
     border-radius: 14px;
+}
+
+.contact-form legend {
+    text-align: center;
+    margin-bottom: 1.2rem;
 }
 
 @media (min-width:992px) {
     .section-ten .row.g-5 {
         display: flex;
         align-items: stretch;
-
     }
 
     .section-ten .col-xl-5,
@@ -1078,6 +1044,11 @@ body {
     padding: 0;
 }
 
+.footer-container-main .footer-container-title:hover {
+    color: var(--icon-color);
+    cursor: pointer;
+}
+
 .footer-container-desc {
     font-size: 0.9rem;
 }
@@ -1133,7 +1104,6 @@ body {
 .footer-copyright span:hover a {
     opacity: 0.8;
     text-decoration: none;
-
 }
 
 @media (max-width:991.99px) {
